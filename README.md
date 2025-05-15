@@ -1,49 +1,54 @@
-# M169 Repository Sladjan Miljkovic
+# Modul 169 Repository Sladjan Miljkovic
 
-## Einleitung
-<mark>_Summary mit sinnvollen Erklärungen zum Modul 169. Dazu kann auch ein Large Language Model wie ChatGPT oder Copilot genutzt werden_</mark>
+Herzlich Willkommen im Repository vom Modul 169
+- [https://gitlab.com/ch-tbz-it/Stud/m169](https://gitlab.com/ch-tbz-it/Stud/m169)
 
-## Kompetenznachweise
-<mark>_Unterverzeichnisse für jeden Kompetenznachweis erstellen und darin wiederum ein README.md und zugehörigen Content_</mark>
+## Beschreibung
+Die Lernziele sind Teil des Modularen Bildungskonzepts. Die Handlungskompetenzen, die in diesem Modul vermittelt werden, sind in der Modulidentifikation 169 - Services mit Containern bereitstellen festgelegt.
+In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die entsprechenden Kompetenzen.
 
-- [**KN01**](./KN01/README.md)  <mark>_(Den Ordner **KN01** und das zugehörige **README.md** müssen Sie selber erstellen)_</mark>
-- [**KN02**](./KN02/README.md)  <mark>_(Den Ordner **KN02** und das zugehörige **README.md** müssen Sie selber erstellen)_</mark>
-- [**KN03**](./KN03/README.md)  <mark>_(Den Ordner **KN03** und das zugehörige **README.md** müssen Sie selber erstellen)_</mark>
-- [**KN04**](./KN04/README.md)  <mark>_(Den Ordner **KN04** und das zugehörige **README.md** müssen Sie selber erstellen)_</mark>
-- [**KN05**](./KN05/README.md)  <mark>_(Den Ordner **KN05** und das zugehörige **README.md** müssen Sie selber erstellen)_</mark>
-- [**images**](./images) <mark>_(Den Ordner **images** müssen Sie selber erstellen. Dieser ist für Bilder oder Screenshots für das Gesamtprojekt. Also alles, ausser LB2-Pics/Screenshots)_</mark>
+### Ordnerstruktur
 
-## LB2 Projekt
-<mark>_Unterverzeichnis **/LB2**. Darin das **README.md** mit folgender Struktur_</mark>
-- [**./LB2/README.md**](./LB2/README.md) 
-  - TOC <mark>_(Inhaltsverzeichnis mit folgenden Punkten)_</mark>
-  - Einleitung <mark>_Einführende Erklärungen zum Projekt_</mark>
-  - Service-Beschreibung <mark>_Wozu dient die Anwendung_</mark>
-  - Umsetzung <mark>_Eigener Inhalt, frei wählber (Keine Vorgaben)_</mark>
-  - Anwendung <mark>_wie wird der Dienst verfügbar gemacht, wie darauf zugegriffen_</mark>
-  - Quellen <mark>_Ressourcen, die für die Entwicklung der Anwendung genutzt werden_</mark>
-- [**./LB2/images**](./LB2/images) Ordner <mark>_für Bilder, die zum LB2-Projekt verlinkt werden_</mark> 
+#### Kompetenznachweise
+- KN00
+  - [Betriebsmodelle](KN00/Betriebsmodelle.md)
+  - [Servicemodelle](KN00/Servicemodelle.md)
+  - [Cloud-init](KN00/Cloud-init.md)
 
-## Reflexion
-<mark>_Hier halten Sie Ihre Erkenntnisse auf der **metakognitiven Ebene** (recherchieren Sie diesen Begriff) dieses Moduls fest.
-Umfang und Inhalt stehen Ihnen frei_</mark>
+- KN01
+  - [](KN01/Pricing.md)
+  - [](KN01/Evaluation_Cloud-Migration.md)
+  - [](KN01/Vergleich_von_Cloud-Providern.md)
 
+- KN02
+  - [AWS Kurs (Zwei Übungen)](KN02/AWS_Kurs.md)
+  - [Zugriff mit SSH Key](KN02/Zugriff_mit_SSH-Key.md)
 
-## Quellenverzeichnis
+- KN03
+  - [Cloud Init Datei verstehen](KN03/Cloud-init_Datei.md)
+  - [SSH Key und Cloud-init](KN03/SSH-Key_und_Cloud-init.md)
+  - [Template](KN03/Template.md)
+  - [Auftrennung von Web- und Datenbankserver](KN03/Auftrennung_von_Web_und_Datenbankserver.md)
 
-:pushpin: **WICHTIG:** <mark>_Falls Sie AI nutzen, dann die gestellten Fragen in einem separaten register festhalten_</mark>
+- KN04
+  - [S3 Bucket (Object Store) erstellen und Objekte darin ablegen](KN04/Elastic_Block_Storage_Volume_erzeugen_und_im_laufenden_Betrieb_einer_EC2-Instanz_hinzufügen.md)
+  - [Mit "Cloud-init" einen Webserver aufsetzen mit Zugriff auf Bild im S3-Bucket](KN04/Mit_Cloud-init_einen_Webserver_aufsetzen_mit_Zugriff_auf_Bild_im_S3-Bucket.md)
+  - [Elastic Block Storage (EBS) Volume erzeugen und im laufenden Betrieb einer EC2-Instanz hinzufügen](KN04/S3_Bucket_erstellen_und_Objekte_darin_ablegen.md)
+  - [Speichereigenschaften erkennen](KN04/Speichereigenschaften_erkennen.md)
 
-  * [AI Fragen](./ai.md) <mark>_(Erstellen Sie dazu im Hauptverzeichnis das file **ai.md** und kopieren Sie da sämtliche Fragen rein, die sie z.B. ChatGPT gestellt haben)_</mark>
-      * **Beispiel:** Erkläre mir den Begriff "metakognitive Ebene" in einem Satz und leicht verständlich
-  * [1. Quellenbeispiel - GitLab flavored Markdown](https://docs.gitlab.com/ee/user/markdown.html) <mark>_(...weitere Quellenangabe)_</mark>
-  * [2. Quellenbeispiel - Docker Docs](https://docs.docker.com/) <mark>_(...weitere Quellenangabe)_</mark>
+- KN05
+  - [Eigene VPC mit je zwei Public und Private Subnets in zwei verschiedenen Availability Zones erstellen](KN05/Eigene_VPC_erstellen.md)
+  - [VPC erstellen und einen Web Server darin deployen](KN05/VPC_erstellen_und_einen_Web_Server_darin_deployen.md)
+  - [Zwei Linux Instanzen aufsetzen](KN05/Zwei_Linux_Instanzen_aufsetzen.md)
 
+- KN06
+  - [Scaling up vs. out, Elasticity / Auto Scaling, Load Balancer und High Availability](KN06/Scaling_up_vs_out.md)
+  - [Zwei Webserver erstellen und Last mittels Load Balancer gleichmässig verteilen](KN06/Zwei_Webserver_erstellen_und_Last_mittels_Load_Balancer_gleichmässig_verteilen.md)
+  - [Auto Scaling Group erstellen und anwenden](KN06/Auto_Scaling_Group_erstellen_und_anwenden.md)
+  - [Load Balancer / High Availability](KN06/Load_Balancer_High_Availability.md)
+  - [High Availability Setup mit elastischer Anpassung der Ressourcen](KN06/High_Availability_Setup_mit_elastischer_Anpassung_der_Ressourcen.md)
 
-<br>
+- KN07
+  - [EBS Volume erstellen Snapshot ziehen und daraus neues Volume erzeugen](KN07/EBS_Volume_erstellen_Snapshot_ziehen_und_daraus_neues_Volume_erzeugen.md)
 
----
-
-> [⇧ **Nach oben**](#m169-repository)
-
-___
-
+#### Projekt LB2
