@@ -17,7 +17,6 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
 
 - KN02
   - [KN02](KN02/README.md)
-  - [](KN02/.md)
 
 - KN03
   - [](KN03/.md)
