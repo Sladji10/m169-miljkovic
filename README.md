@@ -16,7 +16,7 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
   - [🟢 5. Teil-Challenge](KN01/Challenge_5.md)
 
 - KN02
-  - [](KN02/.md)
+  - [KN02](KN02/README.md)
   - [](KN02/.md)
 
 - KN03
