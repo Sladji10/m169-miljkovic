@@ -10,10 +10,6 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
 ### Ordnerstruktur
 
 #### Kompetenznachweise
-- KN00
-  - [Betriebsmodelle](KN00/Betriebsmodelle.md)
-  - [Servicemodelle](KN00/Servicemodelle.md)
-  - [Cloud-init](KN00/Cloud-init.md)
 
 - KN01
   - [](KN01/Pricing.md)
@@ -21,20 +17,20 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
   - [](KN01/Vergleich_von_Cloud-Providern.md)
 
 - KN02
-  - [AWS Kurs (Zwei Übungen)](KN02/AWS_Kurs.md)
-  - [Zugriff mit SSH Key](KN02/Zugriff_mit_SSH-Key.md)
+  - [](KN02/AWS_Kurs.md)
+  - [](KN02/Zugriff_mit_SSH-Key.md)
 
 - KN03
-  - [Cloud Init Datei verstehen](KN03/Cloud-init_Datei.md)
-  - [SSH Key und Cloud-init](KN03/SSH-Key_und_Cloud-init.md)
-  - [Template](KN03/Template.md)
-  - [Auftrennung von Web- und Datenbankserver](KN03/Auftrennung_von_Web_und_Datenbankserver.md)
+  - [](KN03/Cloud-init_Datei.md)
+  - [](KN03/SSH-Key_und_Cloud-init.md)
+  - [](KN03/Template.md)
+  - [](KN03/Auftrennung_von_Web_und_Datenbankserver.md)
 
 - KN04
-  - [S3 Bucket (Object Store) erstellen und Objekte darin ablegen](KN04/Elastic_Block_Storage_Volume_erzeugen_und_im_laufenden_Betrieb_einer_EC2-Instanz_hinzufügen.md)
-  - [Mit "Cloud-init" einen Webserver aufsetzen mit Zugriff auf Bild im S3-Bucket](KN04/Mit_Cloud-init_einen_Webserver_aufsetzen_mit_Zugriff_auf_Bild_im_S3-Bucket.md)
-  - [Elastic Block Storage (EBS) Volume erzeugen und im laufenden Betrieb einer EC2-Instanz hinzufügen](KN04/S3_Bucket_erstellen_und_Objekte_darin_ablegen.md)
-  - [Speichereigenschaften erkennen](KN04/Speichereigenschaften_erkennen.md)
+  - [](KN04/Elastic_Block_Storage_Volume_erzeugen_und_im_laufenden_Betrieb_einer_EC2-Instanz_hinzufügen.md)
+  - [](KN04/Mit_Cloud-init_einen_Webserver_aufsetzen_mit_Zugriff_auf_Bild_im_S3-Bucket.md)
+  - [](KN04/S3_Bucket_erstellen_und_Objekte_darin_ablegen.md)
+  - [](KN04/Speichereigenschaften_erkennen.md)
 
 - KN05
   - [Eigene VPC mit je zwei Public und Private Subnets in zwei verschiedenen Availability Zones erstellen](KN05/Eigene_VPC_erstellen.md)
