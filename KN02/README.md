@@ -41,6 +41,89 @@
 
 **PaaS:** Die Plattform mit Betriebssystem und Entwicklungsumgebung wird vom Anbieter bereitgestellt. Du kümmerst dich nur um die Entwicklung und Verwaltung deiner Anwendungen.
 
+### Begriff Infrastructure As Code
+Infrastructure As Code (IaC) bedeutet, dass du deine gesamte IT-Infrastruktur (wie Server, Netzwerke) mit Code definierst, anstatt alles manuell einzurichten. 
+
+### Produkte, die Infrastructure As Code anbieten
+*Terraform:* Ein Tool, um Infrastruktur in verschiedenen Cloud-Umgebungen mit Code zu verwalten.
+
+*Ansible:* Automatisiert die Verwaltung und Konfiguration von Computern.
+
+*Puppet:* Ermöglicht die Verwaltung der Konfiguration von Servern durch Code.
+
+## 2. Teil-Challenge
+
+### 1. Aufgabe: Automatisierung vs. Manuelle Konfiguration
+
+**Warum ist es besser, IT-Systeme automatisch zu konfigurieren statt manuell?**
+
+- Automatische Konfiguration ist schneller und weniger fehleranfällig.
+- Sie sorgt für Konsistenz und Wiederholbarkeit der Systeme.
+- Änderungen können dokumentiert und versioniert werden.
+- Automatisierung spart Zeit und reduziert den Aufwand bei Updates oder Skalierungen.
+
+**Was bedeutet Infrastructure as Code (IaC)?**
+
+- IaC bedeutet, dass die IT-Infrastruktur (Server, Netzwerke, Speicher usw.) mit Code beschrieben und automatisch bereitgestellt wird.
+- Dadurch kann Infrastruktur einfach automatisiert, verwaltet und reproduziert werden.
+
+### 2. Aufgabe: IaC-Tools & Container-Orchestrierung
+
+**Zwei IaC-Tools:**
+
+**Docker:**
+Erstellt und verwaltet Container, in denen Anwendungen und ihre Umgebung isoliert laufen.
+Vorteil: Anwendungen sind portabel und laufen überall gleich.
+
+**Terraform:**
+Ein Tool, um Infrastruktur (Cloud-Ressourcen, Netzwerke usw.) mit Code zu definieren und bereitzustellen.
+Vorteil: Infrastruktur kann automatisiert und versioniert werden.
+
+**Kubernetes und Container-Orchestrierung:**
+
+- Kubernetes ist ein System zur Verwaltung von Container-Anwendungen.
+- Es automatisiert das Starten, Skalieren und Überwachen von Containern.
+- Container-Orchestrierung bedeutet, mehrere Container über viele Server verteilt zu verwalten.
+- **Ziel:** Hohe Verfügbarkeit, Lastverteilung und einfache Verwaltung von Anwendungen.
+
+### Amazon Web Services (AWS)
+
+- Marktführer im Cloud-Computing mit 31 Regionen und 99 Verfügbarkeitszonen weltweit.
+- Bietet virtuelle Server (EC2), Speicher (S3), serverloses Computing (Lambda), Datenbanken (RDS) und Content-Delivery (CloudFront).
+- Stark in Ausfallsicherheit und globaler Verfügbarkeit.
+
+### Microsoft Azure
+
+- Bekannt für gute Integration mit Microsoft-Produkten und Hybrid-Cloud-Lösungen.
+- Verfügt über 60+ Regionen mit mehreren Verfügbarkeitszonen für Ausfallsicherheit.
+- Bietet virtuelle Maschinen, Speicher (Blob Storage), serverlose Funktionen, Cloud-Datenbanken und Identitätsmanagement (Active Directory).
+
+### Google Cloud Platform (GCP)
+- Fokus auf Innovation, KI und maschinelles Lernen.
+- Hat 38 Regionen und über 100 Verfügbarkeitszonen mit schnellem Netzwerk.
+- Bietet virtuelle Maschinen (Compute Engine), Speicher (Cloud Storage), Data-Warehouse (BigQuery), serverlose Funktionen und Kubernetes (GKE).
+
+## 3. Teil Challenge
+
+### 1. Aufgabe – Vergleich der globalen Infrastruktur
+
+| Cloud-Plattform  | Anzahl Regionen | Anzahl Verfügbarkeitszonen (Availability Zones) |
+|------------------|-----------------|-------------------------------------------------|
+| AWS              | 31              | 99                                              |
+| Microsoft Azure  | 60+             | Mehrere pro Region                               |
+| Google Cloud     | 38              | Über 100                                        |
+
+---
+
+### 2. Aufgabe – Vergleich eines Dienstes (Compute) zwischen AWS, Azure und GCP
+
+| Plattform         | Dienstname             | Beschreibung und Unterschiede                                      | Quelle                                           |
+|-------------------|------------------------|-------------------------------------------------------------------|-------------------------------------------------|
+| AWS               | Amazon EC2             | Skalierbare virtuelle Server mit vielen Instanztypen und hoher Flexibilität. Unterstützt Auto-Scaling und diverse Betriebssysteme. | [AWS EC2 Docs](https://docs.aws.amazon.com/ec2/) |
+| Microsoft Azure   | Azure Virtual Machines | Bietet VMs für Windows und Linux mit einfacher Integration in Microsoft-Dienste. Starke Hybrid-Cloud-Unterstützung. | [Azure VMs Docs](https://learn.microsoft.com/azure/virtual-machines/) |
+| Google Cloud      | Compute Engine         | Hoch skalierbare virtuelle Maschinen mit schneller Bereitstellung. Gute Performance dank Googles Netzwerk. | [GCP Compute Engine](https://cloud.google.com/compute) |
+
+
 
 ## Quellen
 *GitLab von Herrn Rohr*
