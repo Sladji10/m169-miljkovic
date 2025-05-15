@@ -85,7 +85,7 @@ runcmd:
 | **Systemd-Integration** | Eingeschränkt                      | Sehr gute Unterstützung                  |
 | **Sicherheit**      | Weniger isoliert (Daemon läuft als root) | Besser isoliert |
 
----
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_6.png?raw=true" width="800" />
 
 ### Warum ist podman.service inaktiv?
 
