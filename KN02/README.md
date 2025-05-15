@@ -1,6 +1,4 @@
-## Servicemodelle
-
-### Cloud-Service-Modelle
+## Cloud-Service-Modelle
 *Hier ist eine Übersicht über die vier Modelle:*
 
 <img src="https://github.com/Sladji10/m346-miljkovic/blob/main/Images/XaaS.png?raw=true" width="400" />
