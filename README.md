@@ -3,7 +3,7 @@
 Herzlich Willkommen im Repository vom Modul 169
 - [https://gitlab.com/ch-tbz-it/Stud/m169](https://gitlab.com/ch-tbz-it/Stud/m169)
 
-<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/m169.png?raw=true" width="800" />
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/m169.png?raw=true" width="500" />
 
 ## Beschreibung
 Die Lernziele sind Teil des Modularen Bildungskonzepts. Die Handlungskompetenzen, die in diesem Modul vermittelt werden, sind in der Modulidentifikation 169 - Services mit Containern bereitstellen festgelegt.
