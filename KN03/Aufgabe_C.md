@@ -27,12 +27,16 @@ Dann wurde der MariaDB-Container mit dem folgenden Befehl gestartet:
 docker run -d --name mariadb-container -e MYSQL_ROOT_PASSWORD=rootpassword -p 3306:3306 mariadb
 ```
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_11.png?raw=true" width="800" />
+
 ### Port-Forwarding aktivieren und EC2-Security Group konfigurieren
 Um auf den MariaDB-Container zuzugreifen, wurde das Port-Forwarding im Docker-Container eingerichtet. Ausserdem wurde die EC2-Security Group angepasst, um den Zugriff auf Port 3306 zu erlauben. Hierfür wurde in der AWS Management Console eine Inbound-Regel hinzugefügt:
 
 - **Typ:** Custom TCP Rule
 - **Port:** 3306
 - **Quelle:** 0.0.0.0/0
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_13.png?raw=true" width="800" />
 
 ### Verbindung mit HeidiSQL herstellen
 In HeidiSQL wurde eine neue Sitzung eingerichtet:
@@ -47,6 +51,8 @@ In HeidiSQL wurde eine neue Sitzung eingerichtet:
 
 ### Datenbank erstellen
 Eine neue Datenbank: M169_KN03_MIL wurde in HeidiSQL erstellt.
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_14.png?raw=true" width="800" />
 
 ### Docker Volume einrichten
 Ein Docker Volume wurde erstellt, um die Datenbankdaten dauerhaft zu speichern, auch nach einem Neustart des Containers:
@@ -69,4 +75,10 @@ docker rm -f mariadb-container
 docker run -d --name mariadb-container -e MYSQL_ROOT_PASSWORD=rootpassword -v mariadb-data:/var/lib/mysql -p 3306:3306 mariadb
 ```
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_12.png?raw=true" width="800" />
+
 Nach dem Neustart des Containers konnte die zuvor erstellte Datenbank weiterhin über HeidiSQL aufgerufen werden.
+
+## Quellen
+
+Gitlab von Herr Rohr
