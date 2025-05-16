@@ -20,9 +20,9 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
 
 - KN03
   - [Aufsetzen der EC2-Instanz mit IaC-Code - AWS LEARNER LAB](KN03/Aufgabe_A.md)
-  - [OCI-Images, Container und Registry - BASICS](KN03/.md)
-  - [](KN03/.md)
-  - [](KN03/.md)
+  - [OCI-Images, Container und Registry - BASICS](KN03/Aufgabe_B.md)
+  - [OCI-Images mit Docker - RUN & ADMINISTRATION](KN03/Aufgabe_C.md)
+  - [OCI-Images mit Docker - BUILD & CUSTOMIZATION](KN03/Aufgabe_D.md)
 
 - KN04
   - [](KN04/.md)
