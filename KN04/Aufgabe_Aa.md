@@ -65,6 +65,8 @@ Webbrowser öffnen:
 
 *http://3.87.154.73:8091* (Das ist meine Public IP von der EC2 Instanz)
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_19.png?raw=true" width="850" />
+
 ### Container stoppen und löschen
 Wenn du den Container stoppen und das Image löschen möchtest, benutze folgende Befehle:
 
