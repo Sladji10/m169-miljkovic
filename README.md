@@ -28,10 +28,11 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
   - [Container Netzwerk - VERTIEFUNG](KN03/Aufgabe_E.md)
 
 - KN04
-  - [](KN04/.md)
-  - [](KN04/.md)
-  - [](KN04/.md)
-  - [](KN04/.md)
+  - [Docker Image aufsetzen, in Registry ablegen und deployen - OCI: BASIC WORKFLOW](KN04/Aufgabe_Aa.md)
+  - [Docker Compose - Container Orchestrierung mit mehreren Services - CONTAINER MANAGEMENT: ENTRY-LEVEL](KN04/Aufgabe_Bb.md)
+  - [Docker Swarm Cluster aufsetzen - SETUP HIGH AVAILABILITY PLATFORM](KN04/Aufgabe_Cc.md)
+  - [Docker Swarm Imperativ - CONTAINER ORCHESTRATION: ENTRY-LEVEL](KN04/Aufgabe_Dd.md)
+  - [Docker Swarm Deklarativ - CONTAINER ORCHESTRATION: ADVANCED-LEVEL](KN04/Aufgabe_Ee.md)
 
 - KN05
   - [](KN05/.md)
