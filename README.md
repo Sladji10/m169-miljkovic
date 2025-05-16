@@ -25,6 +25,7 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
   - [OCI-Images, Container und Registry - BASICS](KN03/Aufgabe_B.md)
   - [OCI-Images mit Docker - RUN & ADMINISTRATION](KN03/Aufgabe_C.md)
   - [OCI-Images mit Docker - BUILD & CUSTOMIZATION](KN03/Aufgabe_D.md)
+  - [Container Netzwerk - VERTIEFUNG](KN03/Aufgabe_E.md)
 
 - KN04
   - [](KN04/.md)
