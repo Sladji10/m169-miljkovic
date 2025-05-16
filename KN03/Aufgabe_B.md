@@ -32,13 +32,16 @@ Falls die Webseite nicht geladen wird, liegt das oft an den Sicherheitsregeln de
 
 4. Speichere die Regel.
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_8.png?raw=true" width="800" />
+
 5. Versuche erneut, die Webseite im Browser über `http://54.87.92.215:8080` (Meine Public IP) aufzurufen.
-
-
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_7.png?raw=true" width="800" />
 
-<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_8.png?raw=true" width="800" />
-
+Wenn man fertig ist mit dem Auftrag, kann man eigentlich den Docker stoppen und löschen.
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_10.png?raw=true" width="800" />
+
+## Quellen
+
+Github von Herr Rohr
