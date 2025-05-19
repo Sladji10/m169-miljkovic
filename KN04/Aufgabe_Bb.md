@@ -4,8 +4,8 @@
 In diesem Projekt wurde eine Multicontainer-Webanwendung mit Docker Compose auf einer **AWS EC2 Instanz** bereitgestellt. Die Services werden per Compose-Datei orchestriert. Ziel ist es, eine einfache Seite zu erstellen, die beim Laden die Anzahl der Seitenaufrufe über Redis zählt.
 
 ### Voraussetzungen
-- Docker & Docker Compose auf EC2 installiert
-- Security Group mit freigegebenem Port 5169 (AWS)
+- Docker und Docker Compose auf EC2 installiert
+- Security Group mit freigegebenem Port **5169** (AWS)
 - EC2-Öffentliche-IP: ```http://54.234.169.42:5169``` (Meine IP)
 
 ### Anpassungen **Dateien im geklonten Repo**
@@ -24,7 +24,7 @@ In diesem Projekt wurde eine Multicontainer-Webanwendung mit Docker Compose auf 
 
 ```docker compose ps```
 
-
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_24.png?raw=true" width="850" />
 
 ### Webseite aufrufen im Browser:
 
@@ -32,7 +32,17 @@ In diesem Projekt wurde eine Multicontainer-Webanwendung mit Docker Compose auf 
 
 Bei mir sollte man ein Bild von Messi sehen.
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_20.png?raw=true" width="850" />
+
 ### Volume und Netzwerk prüfen
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_21.png?raw=true" width="850" />
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_22.png?raw=true" width="850" />
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_23.png?raw=true" width="850" />
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_27.png?raw=true" width="850" />
 
 ### Umgebung löschen
 - ```docker compose down --volumes```
