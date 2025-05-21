@@ -10,7 +10,7 @@ Ziel dieser Challenge war es, eine produktionsreife, hochverfügbare Plattform m
 |-------------|--------|--------------|
 | *Manager Nodes* | *3* | *Docker-Swarm-Manager, davon einer `Leader`, zwei `Reachable`* |
 | *Worker Nodes*  | *2* | *Ausführung der Container* |
-| *Availability Zones* | *2** | *z.B. `us-east-1a`, `us-east-1b`* |
+| *Availability Zones* | *2* | *`us-east-1c`, `us-east-1f`* |
 | *Plattform* | *AWS EC2* | *Ubuntu 22.04 LTS, `t2.micro`* |
 | *Netzwerke* | *Public + Private* | *Kommunikation über `172.31.0.0/16` CIDR* |
 | *Cluster Kommunikation* | *Security Group* | *Inbound-Rules für Ports **22**, **2377**, **7946** (TCP/UDP), **4789** (UDP)* |
@@ -39,6 +39,8 @@ systemctl start docker
 | 7946 | TCP/UDP   | Node-Kommunikation |
 | 4789 | UDP       | Overlay Netzwerk |
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_30.png?raw=true" width="850" />
+
 ### Swarm Initialisierung
 Auf `manager-1`:
 ```bash
@@ -51,6 +53,8 @@ Auf allen anderen Nodes:
 sudo docker swarm join --token SWMTKN-1-2o4v9p5d4cqs6ml7uyhzxgcxjfy0j88spystvlly01aoceoyzj-6h6nxgllffeuih2kqnmujy66n 172.31.85.233:2377
 sudo docker swarm join --token SWMTKN-1-2o4v9p5d4cqs6ml7uyhzxgcxjfy0j88spystvlly01aoceoyzj-6h6nxgllffeuih2kqnmujy66n 172.31.85.233:2377
 ```
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_29.png?raw=true" width="850" />
 
 ### Manager auf Drain setzen:
 ```bash
@@ -68,34 +72,37 @@ Nur Worker-Nodes sollen Container ausführen dürfen.
 sudo docker node ls
 ```
 
-screeen
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_28.png?raw=true" width="850" />
 
 ### ✅ Manager und Worker-Nodes verteilt über 2 AZs:
 
-Manager 1 und Worker 1 haben AZ: 
+**Manager 1 und Worker 1 haben AZ:** 
 
-Manager 2, Manager 3 und Worker 2 haben AZ: 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_31.png?raw=true" width="850" />
 
-Screenshot
+**Manager 2, Manager 3 und Worker 2 haben AZ:** 
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_32.png?raw=true" width="850" />
 
 ---
 
 ### Fragen
 
-### 🔹 **Was macht der Raft-Algorithmus?**
-- Konsensmechanismus zur Manager-Wahl
-- Verhindert Inkonsistenzen
-- Es braucht ein **Quorum** für Entscheidungen (Mehrheit der Manager)
+### **Was macht der Raft-Algorithmus?**
 
-### 🔹 **Leader & Reachable**
+- Er hilft dabei, einen Anführer *(Manager)* zu wählen.
+- Er sorgt dafür, dass alle dieselben Infos haben.
+- Entscheidungen werden nur getroffen, wenn mehr als die Hälfte zustimmt *(Mehrheit = Quorum)*.
+
+### **Leader & Reachable**
 - `Leader`: aktueller Hauptmanager, koordiniert den Cluster
 - `Reachable`: bereit, Leader zu übernehmen
 - Fällt der Leader aus → automatischer Leader-Wechsel
 
-### 🔹 **Drain vs. Active**
+### **Drain vs. Active**
 - `Drain`: Node erhält keine neuen Container, vorhandene werden migriert
 - `Active`: Node darf Container ausführen
 
 ## Quellen
 
-
+Gitlab von Herr Rohr + ChatGPT Docker Swarm Erklärung
