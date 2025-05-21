@@ -18,7 +18,7 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
   - [🟢 5. Teil-Challenge](KN01/Challenge_5.md)
 
 - KN02
-  - [KN02](KN02/README.md)
+  - [KN02](KN02/Infrastruktur_Automatisierung.md)
 
 - KN03
   - [Aufsetzen der EC2-Instanz mit IaC-Code - AWS LEARNER LAB](KN03/Aufgabe_A.md)
