@@ -109,10 +109,10 @@ sudo docker service ps 169-web
 
 ### Begriff	Bedeutung
 
-Desired State	Zielzustand (z. B. 10 Container sollen laufen)
-Observed State	Tatsächlich laufende Container
-Self-Healing	Swarm stellt Container automatisch wieder her, wenn sie gelöscht wurden
-Load Balancing	Traffic wird gleichmässig auf Container verteilt
+- **Desired State:**	Zielzustand (z. B. 10 Container sollen laufen)
+- **Observed State:**	Tatsächlich laufende Container
+- **Self-Healing:**	Swarm stellt Container automatisch wieder her, wenn sie gelöscht wurden
+- **Load Balancing:**	Traffic wird gleichmässig auf Container verteilt
 
 ### Clean-up
 
