@@ -84,9 +84,6 @@ sudo docker node ls
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_32.png?raw=true" width="850" />
 
----
-
-### Fragen
 
 ### **Was macht der Raft-Algorithmus?**
 
