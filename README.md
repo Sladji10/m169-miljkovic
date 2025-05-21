@@ -14,8 +14,8 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
 #### Kompetenznachweise
 
 - KN01
-  - [🟢 4. Teil-Challenge](KN01/Challenge_4.md)
-  - [🟢 5. Teil-Challenge](KN01/Challenge_5.md)
+  - [Basic Linux Commands](KN01/Challenge_4.md)
+  - [Visual Studio Code](KN01/Challenge_5.md)
 
 - KN02
   - [Infrastruktur Automatisierung](KN02/Infrastruktur_Automatisierung.md)
