@@ -64,7 +64,7 @@ docker run --rm -d --name cowsay -p 80:80 df/cowsay
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_16.png?raw=true" width="800" />
 
 ### Überprüfung und Tests
-Der Webserver konnte erfolgreich über http://Public-IP erreicht werden, und das index.html wurde korrekt angezeigt.
+Der Webserver konnte erfolgreich über (ublic-IP erreicht werden, und das index.html wurde korrekt angezeigt.
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_15.png?raw=true" width="800" />
 
