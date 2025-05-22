@@ -18,7 +18,7 @@ Visual Studio Code wurde erfolgreich installiert und geöffnet.
 - Eine Datei (z. B. `README.md`) wurde geöffnet und bearbeitet.
 
 ### Änderungen:
-- Es wurde eine kleine Änderung vorgenommen (z. B. `Teständerung für Commit`).
+- Es wurde eine kleine Änderung vorgenommen (z. B. `Update README mit Teständerung`).
 - Die Datei wurde gespeichert.
 
 ### Beweis:
