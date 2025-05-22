@@ -59,12 +59,12 @@ docker run --rm -d --name cowsay -p 80:80 df/cowsay
 
 *--rm* sorgt dafür, dass der Container nach dem Stoppen automatisch entfernt wird.
 
--p 80:80 leitet Port 80 des Containers auf Port 80 des Hosts weiter, sodass der Webserver über **http://Public-IP zugänglich ist.
+*-p 80:80* leitet Port 80 des Containers auf Port 80 des Hosts weiter, sodass der Webserver über die Public-IP zugänglich ist.
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_16.png?raw=true" width="800" />
 
 ### Überprüfung und Tests
-Der Webserver konnte erfolgreich über (ublic-IP erreicht werden, und das index.html wurde korrekt angezeigt.
+Der Webserver konnte erfolgreich über *Public-IP* erreicht werden, und das index.html wurde korrekt angezeigt.
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_15.png?raw=true" width="800" />
 
