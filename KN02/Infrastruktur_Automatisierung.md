@@ -62,11 +62,6 @@ Infrastructure As Code (IaC) bedeutet, dass du deine gesamte IT-Infrastruktur (w
 - Änderungen können dokumentiert und versioniert werden.
 - Automatisierung spart Zeit und reduziert den Aufwand bei Updates oder Skalierungen.
 
-**Was bedeutet Infrastructure as Code (IaC)?**
-
-- IaC bedeutet, dass die IT-Infrastruktur (Server, Netzwerke, Speicher usw.) mit Code beschrieben und automatisch bereitgestellt wird.
-- Dadurch kann Infrastruktur einfach automatisiert, verwaltet und reproduziert werden.
-
 ### 2. Aufgabe: IaC-Tools & Container-Orchestrierung
 
 **Zwei IaC-Tools:**
