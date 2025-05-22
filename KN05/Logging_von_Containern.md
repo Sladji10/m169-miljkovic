@@ -27,7 +27,7 @@ Ciao
 
 ```bash
 docker run -d --log-driver=syslog --name m169_syslogtest ubuntu bash -c 'i=0; while true; do i=$((i+1)); echo "docker $i"; sleep 1; done;'
-```bash
+```
 
 *Logs in Echtzeit überwachen:*
 
