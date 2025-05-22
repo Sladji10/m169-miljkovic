@@ -36,7 +36,7 @@ docker login ghcr.io
 Push das Docker-Image in die GitHub Container Registry:
 
 ```bash
-docker push ghcr.io/dsladji10/m169-miljkovic/webserver_one:1.0
+docker push ghcr.io/sladji10/m169-miljkovic/webserver_one:1.0
 ```
 
 ### Docker-Image auf EC2 starten
