@@ -21,6 +21,8 @@ Hallo
 Ciao
 ```
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_42.png?raw=true" width="800" />
+
 ### Wechsel des Log-Drivers auf syslog und Logs überwachen
 
 *Container mit syslog-Log-Driver starten:*
@@ -42,6 +44,8 @@ tail -f /var/log/syslog
 ```bash
 grep m169_syslogtest /var/log/syslog | wc -l
 ```
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/1_43.png?raw=true" width="800" />
 
 ### Container stoppen und entfernen
 
