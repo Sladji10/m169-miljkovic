@@ -22,6 +22,10 @@ Alle Dienste sollen in einem Docker-Netzwerk verbunden werden. Der Zugang erfolg
 - Über SSH verbinden:
   - ```bash ssh -i C:\Users\sladjan.miljkovic\m169\sladjan.pem ubuntu@172.31.92.16```
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_9.png?raw=true" width="900" />
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_10.png?raw=true" width="900" />
+
 ## 🟢 2. Docker & Docker Compose installieren
 
 ```yaml
@@ -116,13 +120,24 @@ sudo docker ps
 
 *→ alle 4 Container sollten laufen*
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_11.png?raw=true" width="900" />
+
 ## 🟢 6. Dienste im Browser öffnen
 
 - **Nextcloud:** http://18.205.156.78:8080 (Öffentliche IP Stand: **16.06.2025**)
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_5.png?raw=true" width="750" />
+
 - **pgAdmin:** http://18.205.156.78:5050 (Öffentliche IP Stand: **16.06.2025**)
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_4.png?raw=true" width="750" />
+
 - **Mailhog:** http://18.205.156.78:8025 (Öffentliche IP Stand: **16.06.2025**)
 
-## 🟢 7. Nextcloud Setup abschließen
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_12.png?raw=true" width="750" />
+
+
+## 🟢 7. Nextcloud Setup abschliessen
 
 - Admin-Benutzer anlegen
 - Datenbankauswahl:
@@ -131,6 +146,10 @@ sudo docker ps
   - Datenbankname: **nextcloud**
   - Datenbank-Host: **db**
 - Setup abschliessen → **Nextcloud** ist einsatzbereit
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_5.png?raw=true" width="750" />
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_13.png?raw=true" width="750" />
 
 ## 🟢 8. pgAdmin mit PostgreSQL verbinden
 
@@ -144,19 +163,23 @@ sudo docker ps
   - Datenbank: **nextcloud**
 - → Du siehst alle Nextcloud-Tabellen *(z.B. oc_filecache, oc_users)*
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_3.png?raw=true" width="750" />
+
 ## 🟢 9. Mailhog als SMTP in Nextcloud einrichten
 
 - In Nextcloud: ***Admin → Einstellungen → Grundeinstellungen → E-Mail***
 
-  - Mail-Modus: SMTP
-  - Verschlüsselung: keine
-  - Von-Adresse: admin@cloud.local
-  - SMTP-Adresse: mailhog
-  - Port: 1025
+  - **Mail-Modus:** SMTP
+  - **Verschlüsselung:** keine
+  - **Von-Adresse:** admin@cloud.local
+  - **SMTP-Adresse:** mailhog
+  - **Port:** 1025
   - Kein Haken bei Authentifizierung!
 
-- Testmail senden an test@cloud.local
-- Öffne http://18.205.156.78:8025 → *Mail erscheint sofort*
+- Testmail senden an **test@cloud.local**
+- ```http://18.205.156.78:8025``` → *Mail erscheint sofort*
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_8.png?raw=true" width="750" />
 
 ## 🟢 10. Alternativer Mail-Test mit mhsendmail
 
@@ -171,7 +194,11 @@ sudo mv mhsendmail_linux_amd64 /usr/local/bin/mhsendmail
 echo -e "Subject: Test\n\nDies ist ein Test." | mhsendmail --smtp-addr=mailhog:1025 test@cloud.local
 ```
 
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_6.png?raw=true" width="750" />
+
 - **→ Mail erscheint in Mailhog**
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_7.png?raw=true" width="750" />
 
 ## ✅ 11. Gesamtfazit
 
