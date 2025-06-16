@@ -102,101 +102,87 @@ networks:
   cloudnet:
 ```
 
-🚀 5. Container starten
+## 🟢 5. Container starten
 
+```yaml
 sudo docker-compose up -d
+```
 
 Prüfen mit:
 
+```yaml
 sudo docker ps
+```
 
-→ alle 4 Container sollten laufen
+*→ alle 4 Container sollten laufen*
 
-🔗 6. Dienste im Browser öffnen
+## 🟢 6. Dienste im Browser öffnen
 
-Nextcloud: http://<ec2-ip>:8080
+- **Nextcloud:** http://18.205.156.78:8080 (Öffentliche IP Stand: **16.06.2025**)
+- **pgAdmin:** http://18.205.156.78:5050 (Öffentliche IP Stand: **16.06.2025**)
+- **Mailhog:** http://18.205.156.78:8025 (Öffentliche IP Stand: **16.06.2025**)
 
-pgAdmin: http://<ec2-ip>:5050
+## 🟢 7. Nextcloud Setup abschließen
 
-Mailhog: http://<ec2-ip>:8025
+- Admin-Benutzer anlegen
+- Datenbankauswahl:
+  - Benutzer: **nc_user**
+  - Passwort: **nc_pass**
+  - Datenbankname: **nextcloud**
+  - Datenbank-Host: **db**
+- Setup abschliessen → **Nextcloud** ist einsatzbereit
 
-📦 7. Nextcloud Setup abschließen
+## 🟢 8. pgAdmin mit PostgreSQL verbinden
 
-Admin-Benutzer anlegen
+- pgAdmin öffnen → Login mit **admin@admin.com** / **admin123**
+- "Neuer Server" → Name: **Nextcloud-DB**
+- Verbindung:
+  - Hostname: **db**
+  - Port: **5432**
+  - Benutzer: **nc_user**
+  - Passwort: **nc_pass**
+  - Datenbank: **nextcloud**
+- → Du siehst alle Nextcloud-Tabellen *(z.B. oc_filecache, oc_users)*
 
-Datenbankauswahl:
+## 🟢 9. Mailhog als SMTP in Nextcloud einrichten
 
-Benutzer: nc_user
+- In Nextcloud: ***Admin → Einstellungen → Grundeinstellungen → E-Mail***
 
-Passwort: nc_pass
+  - Mail-Modus: SMTP
+  - Verschlüsselung: keine
+  - Von-Adresse: admin@cloud.local
+  - SMTP-Adresse: mailhog
+  - Port: 1025
+  - Kein Haken bei Authentifizierung!
 
-Datenbankname: nextcloud
+- Testmail senden an test@cloud.local
+- Öffne http://18.205.156.78:8025 → *Mail erscheint sofort*
 
-Datenbank-Host: db
+## 🟢 10. Alternativer Mail-Test mit mhsendmail
 
-Setup abschliessen → Nextcloud ist einsatzbereit
-
-🛠️ 8. pgAdmin mit PostgreSQL verbinden
-
-pgAdmin öffnen → Login mit admin@admin.com / admin123
-
-"Neuer Server" → Name: Nextcloud-DB
-
-Verbindung:
-
-Hostname: db
-
-Port: 5432
-
-Benutzer: nc_user
-
-Passwort: nc_pass
-
-Datenbank: nextcloud
-
-→ Du siehst alle Nextcloud-Tabellen (z. B. oc_filecache, oc_users)
-
-✉️ 9. Mailhog als SMTP in Nextcloud einrichten
-
-In Nextcloud: Admin → Einstellungen → Grundeinstellungen → E-Mail
-
-Felder ausfüllen:
-
-Mail-Modus: SMTP
-
-Verschlüsselung: keine
-
-Von-Adresse: admin@cloud.local
-
-SMTP-Adresse: mailhog
-
-Port: 1025
-
-Kein Haken bei Authentifizierung!
-
-Testmail senden an test@cloud.local
-
-Öffne http://<ec2-ip>:8025 → Mail erscheint sofort
-
-🧪 10. Alternativer Mail-Test mit mhsendmail (CLI)
-
+```yaml
 wget https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhsendmail_linux_amd64
 chmod +x mhsendmail_linux_amd64
 sudo mv mhsendmail_linux_amd64 /usr/local/bin/mhsendmail
+```
 
-# Test senden:
+**Test senden:**
+```yaml
 echo -e "Subject: Test\n\nDies ist ein Test." | mhsendmail --smtp-addr=mailhog:1025 test@cloud.local
+```
 
-→ Mail erscheint in Mailhog
+- **→ Mail erscheint in Mailhog**
 
-✅ Gesamtfazit
+## ✅ 11. Gesamtfazit
 
 Alle Komponenten wurden erfolgreich installiert, gestartet und integriert. Alle Dienste laufen gemeinsam in einem Docker-Netzwerk und können miteinander kommunizieren:
 
-Nextcloud nutzt PostgreSQL als Datenbank
-
-pgAdmin greift direkt auf dieselbe Datenbank zu
-
-Mail-Versand erfolgt über Mailhog
+- **Nextcloud nutzt PostgreSQL als Datenbank**
+- **pgAdmin greift direkt auf dieselbe Datenbank zu**
+- **Mail-Versand erfolgt über Mailhog**
 
 Diese Umgebung eignet sich ideal zum Experimentieren, Testen und Präsentieren einer containerisierten Cloud-Infrastruktur.
+
+## Quellen
+
+Gitlab Repository von *Herr Rohr*, **ChatGPT Erklärungen:** *Nextcloud, Mailhog*, **YouTube Video:** *Mailhog Mail Versand*
