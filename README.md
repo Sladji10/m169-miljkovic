@@ -42,8 +42,10 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
 
 #### Projekt LB2
 
-Das Projekt hat mir gut gefallen und ich konnte viel lernen. Besonders spannend war es, die verschiedenen Dienste wie **Nextcloud, PostgreSQL, pgAdmin und Mailhog** mit Docker zu verbinden und alles auf einer AWS-Instanz laufen zu lassen.
+Das Projekt hat mir viel Spass gemacht und ich konnte sehr viel dazulernen. Ich habe zum ersten Mal eine eigene kleine Cloud-Umgebung mit Docker aufgebaut – mit **Nextcloud als Hauptdienst**, einer **PostgreSQL-Datenbank**, **pgAdmin zur Verwaltung** und **Mailhog für den Mailversand**.
 
-Ich habe verstanden, wie die Container zusammenarbeiten und wie man sie über Docker Compose steuert. Die Einrichtung von **Mailhog** als *Test-Mailserver* und die Verbindung zu **Nextcloud** waren sehr interessant.
+Die Installation auf der AWS EC2-Instanz und das Arbeiten mit Docker Compose waren spannend. Ich habe gelernt, wie die Container über ein gemeinsames Netzwerk verbunden werden.
 
-Es gab ein paar kleine Probleme, zum Beispiel bei der Netzwerkkonfiguration, aber ich konnte sie mit etwas Geduld und Hilfe aus der Doku lösen. Am Ende hat alles funktioniert und ich bin mit dem Ergebnis sehr zufrieden.
+Ein kleiner Stolperstein war die Einrichtung von **Mailhog** als Test-Mailserver in **Nextcloud**. Anfangs kamen keine Mails an, aber nach mehreren Versuchen mit den ***SMTP-Einstellungen*** hat es dann funktioniert. *Das war eine gute Übung im Troubleshooting*.
+
+Insgesamt hat alles geklappt und alle Dienste funktionieren gut zusammen. Ich bin mit dem Ergebnis sehr zufrieden und habe jetzt ein besseres Verständnis für containerisierte Anwendungen in der Cloud.
