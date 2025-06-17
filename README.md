@@ -41,3 +41,9 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
   - [Private Cloud mit Nextcloud, pgAdmin & Mailhog auf AWS EC2 mit Docker](LB2/Dokumentation.md)
 
 #### Projekt LB2
+
+Das Projekt hat mir gut gefallen und ich konnte viel lernen. Besonders spannend war es, die verschiedenen Dienste wie **Nextcloud, PostgreSQL, pgAdmin und Mailhog** mit Docker zu verbinden und alles auf einer AWS-Instanz laufen zu lassen.
+
+Ich habe verstanden, wie die Container zusammenarbeiten und wie man sie über Docker Compose steuert. Die Einrichtung von **Mailhog** als *Test-Mailserver* und die Verbindung zu **Nextcloud** waren sehr interessant.
+
+Es gab ein paar kleine Probleme, zum Beispiel bei der Netzwerkkonfiguration, aber ich konnte sie mit etwas Geduld und Hilfe aus der Doku lösen. Am Ende hat alles funktioniert und ich bin mit dem Ergebnis sehr zufrieden.
