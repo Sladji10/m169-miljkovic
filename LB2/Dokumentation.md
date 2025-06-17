@@ -38,10 +38,11 @@ sudo systemctl start docker
 ## 🟢 3. Projektverzeichnis anlegen
 
 ```yaml
-mkdir LB2 && cd LB2
+mkdir LB2
+cd LB2
 ```
 
-## 🟢 4. docker-compose.yml erstellen
+## 🟢 4. docker-compose.yml erstellen (Im LB2 Ordner)
 
 ```yaml
 version: '3.8'
