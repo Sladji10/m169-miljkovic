@@ -11,6 +11,12 @@
 
 Alle Dienste sollen in einem Docker-Netzwerk verbunden werden. Der Zugang erfolgt über das Webinterface, Konfiguration über Docker Compose. Alle Schritte werden einzeln dokumentiert.
 
+## Systemumgebung mit Netzwerkplan
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/netz.png?raw=true" width="750" />
+
+
+
 ## 🟢 1. AWS EC2 Instanz erstellen
 
 - Image: Ubuntu 24.04 LTS
