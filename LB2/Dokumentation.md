@@ -1,4 +1,4 @@
-# Private Cloud mit Nextcloud, pgAdmin & Mailhog auf AWS EC2 mit Docker
+# Private Cloud mit Nextcloud, pgAdmin und Mailhog auf AWS EC2 mit Docker
 
 ## Projektübersicht
 
