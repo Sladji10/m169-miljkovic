@@ -207,11 +207,48 @@ echo -e "Subject: Test\n\nDies ist ein Test." | mhsendmail --smtp-addr=mailhog:1
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_7.png?raw=true" width="750" />
 
-## 11. Systemüberwachung (Monitoring)
+## 🟢 11. Security-Aspekte
+
+Die Sicherheit der Umgebung wurde durch mehrere Massnahmen verbessert und dokumentiert:
+
+## Begrenzung der Zugriffe (AWS Security Group)
+
+Es wurden **nur notwendige Ports geöffnet**:
+
+- `22` für SSH (nur eigene IP erlaubt)
+- `8080` für Nextcloud
+- `5050` für pgAdmin
+- `8025` und `1025` für Mailhog
+
+➡️ **Alle anderen Ports sind gesperrt.** Dadurch wird das System von unnötigem externen Zugriff geschützt.
+
+### Isolierte Container mit internem Docker-Netzwerk
+
+Alle Dienste sind über ein eigenes Docker-Netzwerk (`cloudnet`) verbunden.
+
+- Die **PostgreSQL-Datenbank ist nicht direkt von aussen erreichbar**
+- Nur **Nextcloud** und **pgAdmin** können intern darauf zugreifen
+
+➡️ Dies schützt die Datenbank vor Angriffen von aussen.
+
+### Sichere Zugangsdaten
+
+- Für PostgreSQL und Nextcloud wurden **eigene Benutzer und Passwörter** gesetzt.
+- Das **Admin-Passwort für Nextcloud** ist stark und sicher gewählt.
+- **pgAdmin-Zugangsdaten** sind individuell gesetzt und nicht öffentlich sichtbar.
+
+### Hinweis zu Mailhog
+
+Mailhog wurde **ohne Authentifizierung** eingerichtet, was **nur für Testumgebungen** geeignet ist.
+
+➡️ In einer **Produktivumgebung** sollte Mail verschlüsselt und mit Authentifizierung versendet werden.
+
+
+## 🟢 12. Systemüberwachung (Monitoring)
 
 Die Container-Ressourcen werden mit ```docker stats``` überwacht. Mit ```docker-compose logs``` kann man die Logs der einzelnen Dienste in Echtzeit anschauen. Für Test-Projekte reichen diese Werkzeuge. In grösseren Projekten kann man zusätzlich Tools wie **Prometheus** oder **Grafana** verwenden. 
 
-## ✅ 12. Gesamtfazit
+## ✅ 13. Gesamtfazit
 
 Alle Komponenten wurden erfolgreich installiert, gestartet und integriert. Alle Dienste laufen gemeinsam in einem Docker-Netzwerk und können miteinander kommunizieren:
 
