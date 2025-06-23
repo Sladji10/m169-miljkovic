@@ -207,7 +207,11 @@ echo -e "Subject: Test\n\nDies ist ein Test." | mhsendmail --smtp-addr=mailhog:1
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_7.png?raw=true" width="750" />
 
-## ✅ 11. Gesamtfazit
+## 11. Systemüberwachung (Monitoring)
+
+Die Container-Ressourcen werden mit ```docker stats``` überwacht. Mit ```docker-compose logs``` kann man die Logs der einzelnen Dienste in Echtzeit anschauen. Für Test-Projekte reichen diese Werkzeuge. In grösseren Projekten kann man zusätzlich Tools wie **Prometheus** oder **Grafana** verwenden. 
+
+## ✅ 12. Gesamtfazit
 
 Alle Komponenten wurden erfolgreich installiert, gestartet und integriert. Alle Dienste laufen gemeinsam in einem Docker-Netzwerk und können miteinander kommunizieren:
 
