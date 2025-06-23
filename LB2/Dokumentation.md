@@ -32,7 +32,7 @@ Alle Dienste sollen in einem Docker-Netzwerk verbunden werden. Der Zugang erfolg
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/2_10.png?raw=true" width="900" />
 
-## 🟢 2. Docker & Docker Compose installieren
+## 🟢 2. Docker und Docker Compose installieren
 
 ```yaml
 sudo apt update
