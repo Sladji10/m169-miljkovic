@@ -38,7 +38,7 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
   - [Logging von Containern](KN05/Logging_von_Containern.md)
 
 - LB2
-  - [Private Cloud mit Nextcloud, pgAdmin & Mailhog auf AWS EC2 mit Docker](LB2/Dokumentation.md)
+  - [Private Cloud mit Nextcloud, pgAdmin und Mailhog auf AWS EC2 mit Docker](LB2/Dokumentation.md)
 
 #### Projekt LB2
 
