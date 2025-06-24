@@ -9,9 +9,9 @@ Herzlich Willkommen im Repository vom Modul 169
 Die Lernziele sind Teil des Modularen Bildungskonzepts. Die Handlungskompetenzen, die in diesem Modul vermittelt werden, sind in der Modulidentifikation 169 - Services mit Containern bereitstellen festgelegt.
 In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die entsprechenden Kompetenzen.
 
-### Ordnerstruktur
+## Ordnerstruktur
 
-#### Kompetenznachweise
+### Kompetenznachweise
 
 - KN01
   - [Basic Linux Commands](KN01/Challenge_4.md)
