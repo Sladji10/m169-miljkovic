@@ -40,7 +40,7 @@ In diesem Modul erarbeiten Sie sich teils geführt, teils selbstständig die ent
 - LB2
   - [Private Cloud mit Nextcloud, pgAdmin und Mailhog auf AWS EC2 mit Docker](LB2/Dokumentation.md)
 
-#### Projekt LB2
+## Projekt LB2
 
 Das Projekt hat mir viel Spass gemacht und ich konnte sehr viel dazulernen. Ich habe zum ersten Mal eine eigene kleine Cloud-Umgebung mit Docker aufgebaut – mit **Nextcloud als Hauptdienst**, einer **PostgreSQL-Datenbank**, **pgAdmin zur Verwaltung** und **Mailhog für den Mailversand**.
 
