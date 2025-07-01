@@ -246,7 +246,63 @@ Mailhog wurde **ohne Authentifizierung** eingerichtet, was **nur für Testumgebu
 
 ## 🟢 12. Systemüberwachung (Monitoring)
 
-Die Container-Ressourcen werden mit ```docker stats``` überwacht. Mit ```docker-compose logs``` kann man die Logs der einzelnen Dienste in Echtzeit anschauen. Für Test-Projekte reichen diese Werkzeuge. In grösseren Projekten kann man zusätzlich Tools wie **Prometheus** oder **Grafana** verwenden. 
+In meinem Projekt überwache ich die laufenden Container mit folgenden Tools:
+
+### Echtzeit-Überwachung mit `sudo docker stats`
+
+Mit dem Befehl `sudo docker stats` kann ich die CPU- und RAM-Auslastung der laufenden Container prüfen. Beispiel aus meinem Projekt:
+
+```bash
+sudo docker stats
+```
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/p1.png?raw=true" width="750" />
+
+**Die Werte zeigen:**
+
+  - **lb2_nextcloud_1** verwendet aktuell ca. *71 MiB RAM* und keine *CPU*
+
+  - **lb2_pgadmin_1** hat den höchsten RAM-Verbrauch mit ca. *236 MiB* bei sehr geringer CPU-Last
+
+  - **lb2_mailhog_1** und **lb2_db_1** zeigen ebenfalls unkritische Werte
+
+**Fazit**: Alle Container laufen stabil, ohne nennenswerte Auslastung.
+
+### Logüberwachung mit `sudo docker-compose logs`
+
+Um mögliche Fehler zu erkennen, schaue ich regelmässig in die Logs des Containers:
+
+```bash
+sudo docker-compose logs -f lb2_nextcloud_1
+```
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/p2.png?raw=true" width="750" />
+
+Die Logs zeigen, dass der Nextcloud-Container korrekt gestartet ist.
+
+### Statusprüfung aller Container mit `sudo docker ps`
+
+Zur Überprüfung, ob alle Container aktiv und fehlerfrei laufen, verwende ich:
+
+```bash
+sudo docker ps
+```
+
+<img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/p3.png?raw=true" width="750" />
+
+Alle Container laufen seit über einer Stunde ohne Probleme. Es gibt keine Container im Status Exited oder Restarting.
+
+### Fazit
+
+Die Systemüberwachung in meinem Projekt erfolgt mit folgenden einfachen, aber effektiven Befehlen:
+
+  - `sudo docker stats`: Live-Monitoring von Ressourcenverbrauch (CPU, RAM)
+
+  - `sudo docker-compose logs`: Überwachung der Container-Logs auf Fehler oder Hinweise
+
+  - `sudo docker ps`: Übersicht über den Zustand und die Laufzeit aller Container
+
+Diese Kombination reicht für mein Projekt aus, um die Services sicher und effizient zu überwachen. Für grössere Setups wären Tools wie ***Prometheus***, ***Grafana*** oder ***cAdvisor*** empfehlenswert, um historische Daten visuell auszuwerten. 
 
 ## ✅ 13. Gesamtfazit
 
