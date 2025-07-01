@@ -260,7 +260,7 @@ sudo docker stats
 
 **Die Werte zeigen:**
 
-  - **lb2_nextcloud_1** verwendet aktuell ca. *71 MiB RAM* und keine *CPU*
+  - **lb2_nextcloud_1** verwendet aktuell ca. *71 MiB RAM* und keine CPU
 
   - **lb2_pgadmin_1** hat den höchsten RAM-Verbrauch mit ca. *236 MiB* bei sehr geringer CPU-Last
 
@@ -278,7 +278,7 @@ sudo docker-compose logs -f nextcloud
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/p2.png?raw=true" width="750" />
 
-Die Logs zeigen, dass der Nextcloud-Container korrekt gestartet ist.
+Die Logs zeigen, dass der **Nextcloud-Container** korrekt gestartet ist.
 
 ### Statusprüfung aller Container mit `sudo docker ps`
 
@@ -290,7 +290,7 @@ sudo docker ps
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/p3.png?raw=true" width="750" />
 
-Alle Container laufen seit etwa über 20 Minuten ohne Probleme. Es gibt keine Container im Status Exited oder Restarting.
+Alle Container laufen seit etwa über **20 Minuten** ohne Probleme. -> Es gibt keine Container im Status Exited oder Restarting.
 
 ### Fazit
 
