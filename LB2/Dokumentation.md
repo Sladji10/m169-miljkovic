@@ -290,7 +290,7 @@ sudo docker ps
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/p3.png?raw=true" width="750" />
 
-Alle Container laufen seit über einer Stunde ohne Probleme. Es gibt keine Container im Status Exited oder Restarting.
+Alle Container laufen seit etwa über 20 Minuten ohne Probleme. Es gibt keine Container im Status Exited oder Restarting.
 
 ### Fazit
 
