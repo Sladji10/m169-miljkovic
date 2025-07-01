@@ -273,7 +273,7 @@ sudo docker stats
 Um mögliche Fehler zu erkennen, schaue ich regelmässig in die Logs des Containers:
 
 ```bash
-sudo docker-compose logs -f lb2_nextcloud_1
+sudo docker-compose logs -f nextcloud
 ```
 
 <img src="https://github.com/Sladji10/m169-miljkovic/blob/main/Screenshots/p2.png?raw=true" width="750" />
